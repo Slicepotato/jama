@@ -1,0 +1,6 @@
+# Resources
+*.zip
+/html5blank-stable
+
+# Styles
+*.scss
