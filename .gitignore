@@ -1,5 +1,7 @@
 # Resources
 *.zip
+.htaccess
+index.php
 /html5blank-stable
 
 # Styles
