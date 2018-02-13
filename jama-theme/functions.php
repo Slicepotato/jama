@@ -58,6 +58,18 @@ function jama_widgets() {
     )
   );
 }
-
 add_action( 'widgets_init', 'jama_widgets' );
+
+function site_logo() {
+  register_sidebar(
+    array(
+      'name' => 'Logo Containter',
+      'id' => 'logo',
+      'description' => 'Site logo container',
+      'before_widget' => '<a href="/" id="%1$s" class="%2$s">',
+      'after_widget' => '</a>',
+    )
+  );
+}
+add_action( 'widgets_init', 'site_logo' );
 ?>
