@@ -11,8 +11,8 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+    <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+    <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +38,7 @@
 		?>
 			<!-- header -->
 			<header class="header clear" role="banner">
-        <div class="wrapper">
-
+        <div class="upper wrapper">
 					<!-- logo -->
           <?php
           if(is_active_sidebar('logo')){
@@ -49,11 +48,13 @@
 					<!-- /logo -->
 
 					<!-- nav -->
+          <button type="button" id="nav-toggle"><i class="fa fa-navicon"></i></button>
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
         </div>
+        <div class="banner"></div>
 			</header>
 			<!-- /header -->
 

@@ -61,6 +61,12 @@ a {
   transition: .25s;
 }
 
+/*********************
+BREAKPOINTS
+*********************/
+/* =================================================================
+flex settings
+================================================================= */
 body, html {
   background-color: #fff;
   height: 100%;
@@ -70,6 +76,46 @@ body, html {
 
 h1, h2, h3 {
   font-family: "Roboto Slab", serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+header .upper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .upper nav {
+  display: none;
+}
+
+header .upper nav.open {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0A0908;
+}
+
+#logo {
+  display: block;
+  max-width: 150px;
 }
 
 .splash h1 {
