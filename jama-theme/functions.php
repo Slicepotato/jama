@@ -66,7 +66,7 @@ function site_logo() {
       'name' => 'Logo Container',
       'id' => 'logo',
       'description' => 'Site logo container',
-      'before_widget' => '<a href="/" id="%1$s" class="%2$s">',
+      'before_widget' => '<a href="/" id="logo" class="%2$s">',
       'after_widget' => '</a>',
     )
   );
