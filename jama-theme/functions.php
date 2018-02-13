@@ -29,8 +29,8 @@ function jama_widgets() {
       'name' => 'Footer Sidebar 2',
       'id' => 'footer-sidebar-2',
       'description' => 'Appears in the footer area',
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget' => '</aside>',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget' => '</li>',
       'before_title' => '<h3 class="widget-title">',
       'after_title' => '</h3>',
     )
@@ -40,8 +40,8 @@ function jama_widgets() {
       'name' => 'Footer Sidebar 3',
       'id' => 'footer-sidebar-3',
       'description' => 'Appears in the footer area',
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget' => '</aside>',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget' => '</li>',
       'before_title' => '<h3 class="widget-title">',
       'after_title' => '</h3>',
     )
@@ -51,8 +51,8 @@ function jama_widgets() {
       'name' => 'Footer Sidebar 4',
       'id' => 'footer-sidebar-4',
       'description' => 'Appears in the footer area',
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget' => '</aside>',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget' => '</li>',
       'before_title' => '<h3 class="widget-title">',
       'after_title' => '</h3>',
     )
@@ -72,6 +72,19 @@ function site_logo() {
   );
 }
 add_action( 'widgets_init', 'site_logo' );
+
+function banner_img() {
+  register_sidebar(
+    array(
+      'name' => 'Banner Image',
+      'id' => 'banner_img',
+      'description' => 'banner container',
+      'before_widget' => '<p>',
+      'after_widget' => '</p>',
+    )
+  );
+}
+add_action( 'widgets_init', 'banner_img' );
 
 function theme_js() {
     wp_enqueue_script( 'jama_theme_js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0', true );

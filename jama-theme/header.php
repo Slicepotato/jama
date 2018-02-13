@@ -54,7 +54,13 @@
 					</nav>
 					<!-- /nav -->
         </div>
-        <div class="banner"></div>
+        <div class="banner">
+          <?php
+          if(is_active_sidebar('banner_img')){
+            dynamic_sidebar('banner_img');
+          }
+          ?>
+        </div>
 			</header>
 			<!-- /header -->
 
