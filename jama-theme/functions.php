@@ -63,7 +63,7 @@ add_action( 'widgets_init', 'jama_widgets' );
 function site_logo() {
   register_sidebar(
     array(
-      'name' => 'Logo Containter',
+      'name' => 'Logo Container',
       'id' => 'logo',
       'description' => 'Site logo container',
       'before_widget' => '<a href="/" id="%1$s" class="%2$s">',
@@ -71,5 +71,5 @@ function site_logo() {
     )
   );
 }
-add_action( 'widgets_init', 'site_logo' );
+add_action( 'widgets_init', '' );
 ?>
