@@ -1,6 +1,6 @@
 <!-- footer -->
 <footer class="footer" role="contentinfo">
-  <div class="wrapper">
+  <div class="content-wrap">
     <ul class="meta">
       <?php
         if(is_active_sidebar('footer-sidebar-1')){
@@ -26,7 +26,8 @@
   </div>
 </footer>
 <!-- /footer -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <?php wp_footer(); ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,8 +38,6 @@
   gtag('js', new Date());
   gtag('config', 'UA-114024212-1');
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </body>
 </html>

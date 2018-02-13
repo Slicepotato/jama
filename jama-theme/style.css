@@ -78,8 +78,11 @@ h1, h2, h3 {
   font-family: "Roboto Slab", serif;
 }
 
-.wrapper {
+.content-wrap {
+  max-width: 1160px;
   width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 header .upper {
@@ -102,15 +105,24 @@ header .upper {
 
 header .upper nav {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #0A0908;
+  z-index: 999;
 }
 
 header .upper nav.open {
   display: block;
+}
+
+#nav-toggle {
+  right: 0em;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #0A0908;
+  border: 0;
+  background-color: transparent;
+  font-size: 2em;
 }
 
 #logo {

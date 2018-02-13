@@ -38,7 +38,7 @@
 		?>
 			<!-- header -->
 			<header class="header clear" role="banner">
-        <div class="upper wrapper">
+        <div class="upper content-wrap">
 					<!-- logo -->
           <?php
           if(is_active_sidebar('logo')){
