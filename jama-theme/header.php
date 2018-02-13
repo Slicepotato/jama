@@ -29,7 +29,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php if(!is_page_template( 'splash.php')) { body_class('page'); } else { body_class(); } ?>>
 
 		<?php if(is_page_template( 'splash.php' ))
 		{
@@ -38,20 +38,22 @@
 		?>
 			<!-- header -->
 			<header class="header clear" role="banner">
-        <div class="upper content-wrap">
-					<!-- logo -->
-          <?php
-          if(is_active_sidebar('logo')){
-            dynamic_sidebar('logo');
-          }
-          ?>
-					<!-- /logo -->
+        <div class="upper">
+          <div class="content-wrap">
+  					<!-- logo -->
+            <?php
+            if(is_active_sidebar('logo')){
+              dynamic_sidebar('logo');
+            }
+            ?>
+  					<!-- /logo -->
 
-					<!-- nav -->
-          <button type="button" id="nav-toggle"><i class="fa fa-navicon"></i></button>
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
+  					<!-- nav -->
+            <button type="button" id="nav-toggle"><i class="fa fa-navicon"></i></button>
+  					<nav class="nav" role="navigation">
+  						<?php html5blank_nav(); ?>
+  					</nav>
+          </div>
 					<!-- /nav -->
         </div>
         <div class="banner">
