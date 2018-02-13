@@ -71,5 +71,5 @@ function site_logo() {
     )
   );
 }
-add_action( 'widgets_init', '' );
+add_action( 'widgets_init', 'site_logo' );
 ?>
