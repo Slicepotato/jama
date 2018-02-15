@@ -3,6 +3,8 @@
 .htaccess
 index.php
 /html5blank-stable
+.ftpconfig
+.gitignore
 
 # Styles
 *.scss
