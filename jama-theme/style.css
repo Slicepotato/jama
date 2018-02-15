@@ -340,12 +340,20 @@ main {
 
 main h1 {
   margin: 3rem 0;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 main .post-content p {
   font-size: 1.5rem;
   line-height: 1.25;
   margin-bottom: 2rem;
+}
+
+main .post-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #12100E;
 }
 
 .contact-wrapper {
