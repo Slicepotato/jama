@@ -79,6 +79,7 @@ body.page:not(.splash), html.page:not(.splash) {
 
 body.nav-open, html.nav-open {
   transition: .25s;
+  overflow-x: hidden;
 }
 
 body.nav-open #primary, body.nav-open footer, html.nav-open #primary, html.nav-open footer {
@@ -96,7 +97,6 @@ h1, h2, h3 {
   width: 100%;
   margin: 0 auto;
   padding: 0 1em;
-  position: relative;
   overflow: auto;
 }
 
