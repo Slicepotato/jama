@@ -416,6 +416,11 @@ footer .meta > li {
   margin-bottom: 2rem;
 }
 
+footer .meta .social {
+  font-size: 6em;
+  color: #F7F4F3;
+}
+
 @media (min-width: 760px) {
   footer .meta {
     display: -webkit-box;
