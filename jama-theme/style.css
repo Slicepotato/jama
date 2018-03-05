@@ -263,6 +263,10 @@ header .banner #title p {
 }
 
 @media (min-width: 1160px) {
+  header .banner #title {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   header .banner #title h1 {
     font-size: 6.7em;
   }
@@ -449,6 +453,40 @@ main .post-content h2 {
   border-bottom: 1px solid #12100E;
 }
 
+#pillars {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+#pillars li {
+  padding: 1em 0;
+}
+
+@media (min-width: 760px) {
+  #pillars {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  #pillars li {
+    flex: 0 0 30%;
+    margin: 0 2em;
+  }
+}
+
 blockquote {
   background-color: #F7F4F3;
   padding: 1em;
@@ -544,6 +582,28 @@ footer {
 
 footer .meta > li {
   margin-bottom: 2rem;
+}
+
+footer .meta .social-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+footer .meta .social-wrap > div {
+  flex: 0 0 30%;
 }
 
 footer .meta .social {

@@ -57,8 +57,9 @@
 					<!-- /nav -->
         </div>
 
-				<?php if(is_page('Home')){ ?>
 					<div class="banner">
+						
+						<?php if(is_page('Home')){ ?>
 	          <div id="home-slide">
 							<div class="panel-1"></div>
 							<div class="panel-2"></div>
@@ -70,8 +71,9 @@
 							<h1>Jutsu Aiki Martial Arts</h1>
 							<p>JAMA is dedicated to bringing personal sustainability to the disadvantaged members of our communities.</p>
 						</div>
+						<?php } ?>
+
 	        </div>
-				<?php } ?>
 
 			</header>
 			<!-- /header -->

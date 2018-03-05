@@ -2,20 +2,15 @@
 <footer class="footer" role="contentinfo">
   <div class="content-wrap">
     <ul class="meta">
-      <?php
-        if(is_active_sidebar('footer-sidebar-1')){
-          dynamic_sidebar('footer-sidebar-1');
-        }
-        if(is_active_sidebar('footer-sidebar-2')){
-          dynamic_sidebar('footer-sidebar-2');
-        }
-        if(is_active_sidebar('footer-sidebar-3')){
-          dynamic_sidebar('footer-sidebar-3');
-        }
-        if(is_active_sidebar('footer-sidebar-4')){
-          dynamic_sidebar('footer-sidebar-4');
-        }
-      ?>
+      <?php if(is_active_sidebar('footer-sidebar-1')){ ?>
+          <li class="widget social-wrap"><?php dynamic_sidebar('footer-sidebar-1'); ?></li>
+      <?php } if(is_active_sidebar('footer-sidebar-2')){ ?>
+          <li class="widget"><?php dynamic_sidebar('footer-sidebar-2'); ?></li>
+      <?php } if(is_active_sidebar('footer-sidebar-3')){ ?>
+        <li class="widget"><?php dynamic_sidebar('footer-sidebar-3'); ?></li>
+      <?php } if(is_active_sidebar('footer-sidebar-4')){ ?>
+        <li class="widget"><?php dynamic_sidebar('footer-sidebar-4'); ?></li>
+    <?php } ?>
     </ul>
     <!-- copyright -->
     <div class="copyright">
