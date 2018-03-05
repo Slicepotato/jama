@@ -56,13 +56,23 @@
           </div>
 					<!-- /nav -->
         </div>
-        <div class="banner">
-          <?php
-          if(is_active_sidebar('banner_img')){
-            dynamic_sidebar('banner_img');
-          }
-          ?>
-        </div>
+
+				<?php if(is_page('Home')){ ?>
+					<div class="banner">
+	          <div id="home-slide">
+							<div class="panel-1"></div>
+							<div class="panel-2"></div>
+							<div class="panel-3"></div>
+							<div class="panel-4"></div>
+							<div class="panel-5"></div>
+						</div>
+						<div id="title" class="content-wrap">
+							<h1>Jutsu Aiki Martial Arts</h1>
+							<p>JAMA is dedicated to bringing personal sustainability to the disadvantaged members of our communities.</p>
+						</div>
+	        </div>
+				<?php } ?>
+
 			</header>
 			<!-- /header -->
 

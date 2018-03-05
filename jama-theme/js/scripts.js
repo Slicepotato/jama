@@ -6,4 +6,15 @@ $(document).ready(function(){
       navButton.toggleClass('open');
     });
   });
+
+  $('#home-slide').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
 });

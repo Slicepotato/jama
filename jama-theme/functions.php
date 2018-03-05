@@ -1,4 +1,5 @@
 <?php
+wp_enqueue_style( 'slick',  get_stylesheet_directory_uri() . '/css/slick.css',false,'1.1','all');
 function my_theme_enqueue_styles() {
 
     $parent_style = 'html5blank-stable';
@@ -85,6 +86,11 @@ function banner_img() {
   );
 }
 add_action( 'widgets_init', 'banner_img' );
+
+function slick_js() {
+    wp_enqueue_script( 'slick_slider_js', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.0', true );
+}
+add_action('wp_enqueue_scripts', 'slick_js');
 
 function theme_js() {
     wp_enqueue_script( 'jama_theme_js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0', true );

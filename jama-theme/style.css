@@ -209,6 +209,101 @@ header .upper nav ul li a:hover, header .upper nav ul li a:focus {
 
 header .banner {
   margin-top: 87px;
+  position: relative;
+}
+
+header .banner #title {
+  width: 100%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+header .banner #title h1 {
+  text-align: right;
+  font-size: 7vw;
+  margin: 0;
+}
+
+header .banner #title p {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+@media (min-width: 480px) {
+  header .banner #title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  header .banner #title h1, header .banner #title p {
+    color: #fff;
+    flex: 1 0 100%;
+    text-align: right;
+  }
+  header .banner #title p {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1160px) {
+  header .banner #title h1 {
+    font-size: 6.7em;
+  }
+}
+
+#home-slide .slick-slide {
+  padding-bottom: calc(31.25% / 3);
+  background-size: cover;
+  background-position: center;
+}
+
+#home-slide .slick-slide.panel-1 {
+  background-image: url("http://www.jutsuaiki.org/wp/wp-content/uploads/2018/03/banner-panel-1.jpg");
+}
+
+#home-slide .slick-slide.panel-2 {
+  background-image: url("http://www.jutsuaiki.org/wp/wp-content/uploads/2018/03/banner-panel-2.jpg");
+}
+
+#home-slide .slick-slide.panel-3 {
+  background-image: url("http://www.jutsuaiki.org/wp/wp-content/uploads/2018/03/banner-panel-3.jpg");
+}
+
+#home-slide .slick-slide.panel-4 {
+  background-image: url("http://www.jutsuaiki.org/wp/wp-content/uploads/2018/03/banner-panel-4.jpg");
+}
+
+#home-slide .slick-slide.panel-5 {
+  background-image: url("http://www.jutsuaiki.org/wp/wp-content/uploads/2018/03/banner-panel-5.jpg");
+}
+
+@media (min-width: 480px) {
+  #home-slide .slick-slide {
+    padding-bottom: calc(31.25% / 4);
+  }
+}
+
+@media (min-width: 760px) {
+  #home-slide .slick-slide {
+    padding-bottom: calc(31.25% / 5);
+  }
 }
 
 #nav-toggle {
@@ -293,7 +388,7 @@ header .banner {
 
 #primary {
   padding: 0;
-  background-color: #F7F4F3;
+  background-color: #fff;
 }
 
 #primary.site-content-col-2 main section {
@@ -333,8 +428,6 @@ header .banner {
 }
 
 main {
-  background-color: #fff;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
   padding: 2em 1em 4em;
 }
 
@@ -354,6 +447,43 @@ main .post-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #12100E;
+}
+
+blockquote {
+  background-color: #F7F4F3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+blockquote p:first-child {
+  font-size: 2rem;
+}
+
+blockquote p:first-child:before {
+  content: '\f10d';
+  font-family: "FontAwesome";
+  position: relative;
+  font-size: 1.5rem;
+  top: -.5em;
+  padding-right: .25em;
+}
+
+blockquote p:first-child:after {
+  content: '\f10e';
+  font-family: "FontAwesome";
+  position: relative;
+  font-size: 1.5rem;
+  top: -.5em;
+  padding-left: .25em;
+}
+
+blockquote p:last-child {
+  text-align: right;
+  margin: 0;
+}
+
+blockquote p:last-child .byline {
+  font-style: italic;
 }
 
 .contact-wrapper {
