@@ -675,6 +675,10 @@ footer .copyright p {
 }
 
 /* //////////////////////////////////////////////////////////////////////// */
+#ai1ec-container {
+  margin-bottom: 10em;
+}
+
 .timely .ai1ec-agenda-widget-view .ai1ec-date {
   background: transparent;
   border: 0;
@@ -682,5 +686,10 @@ footer .copyright p {
 
 .timely .ai1ec-agenda-widget-view .ai1ec-date .ai1ec-date-title {
   box-shadow: none;
+  border: 0;
+}
+
+.timely .ai1ec-agenda-widget-view .ai1ec-date.ai1ec-today {
+  background: transparent;
   border: 0;
 }

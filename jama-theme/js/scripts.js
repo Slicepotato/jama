@@ -17,4 +17,8 @@ $(document).ready(function(){
     fade: true,
     cssEase: 'linear'
   });
+
+  $('.ai1ec-views-dropdown').on('click', function(){
+    $(this).find('.ai1ec-dropdown-menu').toggle();
+  });
 });
